@@ -1,0 +1,52 @@
+HTML Self-Closing Tags
+1. What They Are
+
+Self-closing tags are HTML tags that do not have a closing tag (</tag>).
+
+They are used for elements that don’t need any content inside.
+
+Syntax:
+<tagname />
+
+Note: In HTML5, you can also just write <tagname> without the /.
+
+2. Common Self-Closing Tags
+| Tag       | Purpose                                           |
+| --------- | ------------------------------------------------- |
+| `<br>`    | Inserts a line break (new line)                   |
+| `<hr>`    | Inserts a horizontal rule (line)                  |
+| `<img>`   | Embeds an image                                   |
+| `<input>` | Creates a form input field                        |
+| `<link>`  | Links external resources like CSS                 |
+| `<meta>`  | Defines metadata like charset or viewport         |
+| `<embed>` | Embeds external content like PDF, audio, or video |
+
+3. Examples
+
+<p>This is a paragraph.<br>Next line here.</p>
+
+<hr>
+
+<img src="image.jpg" alt="Sample Image">
+
+<input type="text" placeholder="Enter your name">
+
+<link rel="stylesheet" href="style.css">
+
+<meta charset="UTF-8">
+
+<embed src="file.pdf" width="300" height="200">
+
+4. Notes
+
+No content inside: Self-closing tags cannot wrap other content.
+
+Inline vs Block: Some self-closing tags are inline (<br>, <img>), some act like block elements (<hr>).
+
+HTML5 flexibility: You can write <br> instead of <br />—both work.
+
+In short:
+
+Self-closing tags are standalone elements that don’t need a closing tag.
+
+They are commonly used for images, line breaks, horizontal lines, inputs, and metadata.

@@ -1,0 +1,80 @@
+Computer File Paths
+
+A file path tells the computer where a file is located on your system so programs (or HTML) can access it.
+
+1. Types of File Paths
+A. Absolute Path
+
+Specifies the full path from the root of the file system.
+
+Always points to the exact location, no matter where you are.
+
+Example (Windows):
+
+C:\Users\Project\Documents\file.txt
+
+In HTML (absolute URL):
+
+<img src="https://example.com/images/photo.jpg" alt="Photo">
+
+B. Relative Path
+
+Specifies the path relative to the current file location.
+
+Doesn’t need the full path—just how to navigate from the current folder.
+
+Types of Relative Paths:
+
+Same folder
+
+<img src="photo.jpg" alt="Photo">
+
+
+Subfolder
+
+<img src="images/photo.jpg" alt="Photo">
+
+
+Parent folder
+
+<img src="../photo.jpg" alt="Photo">
+
+
+.. → Moves one folder up
+
+Nested folders
+
+<img src="../assets/images/photo.jpg" alt="Photo">
+
+3. Best Practices in HTML Projects
+
+Use relative paths for your project files (images, CSS, JS) → easier to move project folder.
+
+Use absolute paths only for external links (CDN, external images, websites).
+
+Organize files in folders like images/, css/, js/ for clarity.
+
+4. Example Project Structure
+project/
+│
+├─ index.html
+├─ css/
+│   └─ style.css
+├─ js/
+│   └─ script.js
+└─ images/
+    └─ photo.jpg
+
+
+Relative Paths in HTML:
+
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+<img src="images/photo.jpg" alt="Photo">
+
+
+In short:
+
+Absolute path → Full address to a file (system root or URL)
+
+Relative path → Relative to current file location, easier to manage in projects

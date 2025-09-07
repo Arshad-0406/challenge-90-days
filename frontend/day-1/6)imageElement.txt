@@ -1,0 +1,58 @@
+HTML Image Element (<img>)
+1. What it is
+
+The <img> tag is used to display images on a webpage.
+
+It is a self-closing tag, meaning it does not have a closing tag (</img> is not used).
+
+Can display images from local files or external URLs.
+
+2. Basic Syntax
+<img src="image.jpg" alt="Description of Image">
+
+
+src → Specifies the path or URL of the image
+
+alt → Text shown if the image cannot load (also improves accessibility)
+
+3. Common Attributes
+| Attribute   | Purpose                                       |
+| ----------- | --------------------------------------------- |
+| `src`       | Path to the image file                        |
+| `alt`       | Alternate text if image doesn’t load          |
+| `width`     | Width of the image (pixels or %)              |
+| `height`    | Height of the image (pixels or %)             |
+| `title`     | Tooltip text on hover                         |
+| `loading`   | `lazy` for lazy-loading images                |
+| `draggable` | `true` or `false` to make the image draggable |
+
+4. Examples
+
+Basic Image
+
+<img src="https://via.placeholder.com/150" alt="Placeholder Image">
+
+
+Image with size
+
+<img src="https://via.placeholder.com/150" alt="Placeholder" width="200" height="100">
+
+
+Draggable Image
+
+<img src="https://via.placeholder.com/100" alt="Draggable" draggable="true">
+
+
+Lazy-loading Image
+
+<img src="https://via.placeholder.com/300" alt="Lazy Image" loading="lazy">
+
+5. Notes
+
+Always use alt text for accessibility and SEO.
+
+<img> is an inline element, but browsers treat it like text in layout.
+
+Width and height can be set via attributes or CSS.
+
+External images may fail to load if the URL is broken.

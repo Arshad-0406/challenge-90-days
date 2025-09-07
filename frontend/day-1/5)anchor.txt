@@ -1,0 +1,71 @@
+HTML Anchor Element (<a>)
+1. What it is
+
+The <a> tag is used to create hyperlinks in HTML.
+
+Links can point to:
+
+Another webpage (external or internal)
+
+A specific section in the same page
+
+Email addresses
+
+Files to download
+
+2. Basic Syntax
+<a href="URL">Link Text</a>
+
+
+href → The URL or link target
+
+Link Text → The clickable text visible to users
+
+Example:
+
+<a href="https://example.com">Visit Example</a>
+
+3. Types of Links
+
+External Links
+
+<a href="https://example.com" target="_blank">Go to Example</a>
+
+
+target="_blank" → Opens link in a new tab
+
+Internal Links (same page)
+
+<a href="#section1">Go to Section 1</a>
+<section id="section1">
+  <h2>Section 1</h2>
+</section>
+
+
+Uses id of the element for navigation within the page.
+
+Email Links
+
+<a href="mailto:someone@example.com">Send Email</a>
+
+
+Download Links
+
+<a href="file.pdf" download>Download PDF</a>
+
+4. Common Attributes
+| Attribute  | Purpose                                                    |
+| ---------- | ---------------------------------------------------------- |
+| `href`     | URL or target of the link                                  |
+| `target`   | `_blank`, `_self`, `_parent`, `_top` (where link opens)    |
+| `title`    | Tooltip text when hovered                                  |
+| `rel`      | Relationship of linked page (`nofollow`, `noopener`, etc.) |
+| `download` | Forces download of the linked file                         |
+
+6. Key Points
+
+<a> is inline → Does not start a new line.
+
+The href attribute is required for the anchor to work as a link.
+
+Without href, <a> can still be used for styling or JavaScript actions, but it’s not a hyperlink.
