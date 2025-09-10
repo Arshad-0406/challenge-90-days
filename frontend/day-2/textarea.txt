@@ -1,0 +1,67 @@
+What is <textarea>?
+
+The <textarea> tag is used to create a multi-line input field.
+
+Unlike <input type="text"> (which is single-line), <textarea> lets users type paragraphs or longer text.
+
+Commonly used for comments, feedback, messages, reviews, etc.
+
+Syntax
+<textarea name="message" rows="4" cols="30"></textarea>
+
+Key Attributes of <textarea>
+
+name → The name for form submission (data sent to server).
+
+<textarea name="feedback"></textarea>
+
+
+Sends feedback=UserText
+
+rows → Number of visible text lines.
+
+<textarea rows="5"></textarea>
+
+
+cols → Width of the textarea (in characters).
+
+<textarea cols="40"></textarea>
+
+
+placeholder → Shows hint text inside the box.
+
+<textarea placeholder="Write your comment..."></textarea>
+
+
+maxlength → Maximum number of characters allowed.
+
+<textarea maxlength="200"></textarea>
+
+
+readonly → User can see text but not edit.
+
+<textarea readonly>This text cannot be changed</textarea>
+
+
+disabled → Field is greyed out and ignored on form submit.
+
+<textarea disabled>Disabled field</textarea>
+
+
+autofocus → Cursor automatically starts inside textarea when page loads.
+
+<textarea autofocus></textarea>
+
+
+required → Makes field mandatory before submitting form.
+
+<textarea required></textarea>
+
+Example: Feedback Form
+<form>
+  <label for="feedback">Your Feedback:</label><br>
+  <textarea id="feedback" name="feedback" rows="5" cols="40" 
+            placeholder="Write your comments here..." required></textarea>
+  <br><br>
+  <button type="submit">Submit</button>
+</form>

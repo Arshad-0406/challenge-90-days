@@ -1,0 +1,27 @@
+<div> stands for division.
+
+It is a block-level container used to group and organize HTML elements.
+
+By default, it does not add any styling or visual change—it’s mainly for structuring content.
+
+Key Characteristics
+
+1)Block-level element
+
+Always starts on a new line.
+
+Takes the full width of its parent by default.
+
+2)Container for styling
+
+Commonly used with CSS to apply styles, layouts, and formatting to grouped elements.
+
+3)No semantic meaning
+
+Unlike <header>, <section>, <article>, etc., <div> does not describe the meaning of content.
+
+It is purely structural.
+
+<div>
+   <!-- Content goes here -->
+</div>

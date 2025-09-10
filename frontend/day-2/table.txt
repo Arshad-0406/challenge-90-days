@@ -1,0 +1,72 @@
+HTML Tables
+ What is a Table in HTML?
+
+A table displays data in rows and columns.
+
+It is made using the <table> tag.
+
+Inside it, we use rows (<tr>), header cells (<th>), and data cells (<td>).
+
+Basic Structure
+<table>
+  <tr>
+    <th>Header 1</th>
+    <th>Header 2</th>
+  </tr>
+  <tr>
+    <td>Data 1</td>
+    <td>Data 2</td>
+  </tr>
+</table>
+
+
+ <tr> → Table Row
+ <th> → Table Header (bold + centered by default)
+ <td> → Table Data Cell
+
+Common Table Tags
+
+<table> → Defines the table.
+
+<tr> → Defines a row.
+
+<td> → Defines a standard data cell.
+
+<th> → Defines a header cell.
+
+<caption> → Adds a title to the table.
+
+<thead> → Groups header rows.
+
+<tbody> → Groups body rows.
+
+<tfoot> → Groups footer rows.
+
+<colgroup> and <col> → Used to style specific columns.
+
+Important Attributes (old but still used)
+
+border → Adds border to table.
+
+cellspacing → Space between cells.
+
+cellpadding → Space inside a cell.
+
+width, height → Size of table or cells.
+
+Best practice: Use CSS instead of attributes.
+
+
+
+Attributes in Table Cells
+1. colspan
+
+Merges multiple columns into one.
+
+<td colspan="2">Merged Column</td>
+
+2. rowspan
+
+Merges multiple rows into one.
+
+<td rowspan="2">Merged Row</td>

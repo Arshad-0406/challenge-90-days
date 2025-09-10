@@ -1,0 +1,84 @@
+What is <section>?
+
+<section> is a semantic block-level tag in HTML5.
+
+It represents a thematic grouping of content within a webpage.
+
+Typically, each section has a heading (<h1>–<h6>) that describes its purpose.
+
+When to Use <section>?
+
+Use <section> to divide a webpage into logical, meaningful parts.
+
+Examples:
+
+About Us section
+
+Services section
+
+News article section
+
+Contact section
+
+example:
+<section>
+  <h2>About Us</h2>
+  <p>We are a company focused on innovation and quality.</p>
+</section>
+
+<section>
+  <h2>Services</h2>
+  <ul>
+    <li>Web Development</li>
+    <li>Mobile Apps</li>
+    <li>AI Solutions</li>
+  </ul>
+</section>
+
+Difference Between <section> and Other Tags:
+| Tag         | Purpose                                                             |
+| ----------- | ------------------------------------------------------------------- |
+| `<div>`     | Generic container (no semantic meaning).                            |
+| `<article>` | Self-contained piece of content (like a blog post or news article). |
+| `<section>` | Groups related content under a theme with a heading.                |
+| `<main>`    | Represents the main content of a page.                              |
+
+
+-----------------------------------------------------
+Notes on <figure> Tag in HTML
+🔹 What is <figure>?
+
+The <figure> tag is a semantic HTML5 element.
+
+It is used to group media content (like images, diagrams, code snippets, charts, illustrations, etc.) along with a caption.
+
+Usually paired with the <figcaption> tag to describe the content.
+
+<figure>
+  <img src="image.jpg" alt="A beautiful sunset">
+  <figcaption>A beautiful sunset over the mountains.</figcaption>
+</figure>
+
+Why Use <figure>?
+
+Adds semantic meaning → tells browsers and search engines that the image and caption belong together.
+
+Helps with accessibility → screen readers can interpret the caption.
+
+Keeps content self-contained → can be moved anywhere in the document without losing meaning.
+
+Difference Between <figure> and <img>
+
+| Tag        | Purpose                                                                           |
+| ---------- | --------------------------------------------------------------------------------- |
+| `<img>`    | Embeds an image only.                                                             |
+| `<figure>` | Groups an image (or other media) **with an optional caption** for better meaning. |
+
+
+Important Points
+
+<figcaption> is optional but strongly recommended.
+
+<figcaption> can be placed before or after the content inside <figure>.
+
+A <figure> can contain any media type, not just images.

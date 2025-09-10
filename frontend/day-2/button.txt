@@ -1,0 +1,89 @@
+What is <button>?
+
+<button> is used to create a clickable button in HTML.
+
+It is an interactive element that can perform actions like submitting forms, resetting forms, or running JavaScript functions.
+
+syntax:
+
+<button type="button">Click Me</button>
+
+Types of Buttons
+
+1)Submit Button (default if no type is given)
+
+Submits form data to the server.
+
+<button type="submit">Submit</button>
+
+
+2)Reset Button
+
+Resets all form fields to their default values.
+
+<button type="reset">Reset</button>
+
+
+3)General/Custom Button
+
+Does nothing by default, but can trigger JavaScript functions.
+
+<button type="button" onclick="alert('Hello!')">Click Me</button>
+
+Attributes of <button>
+
+type → submit, reset, button
+
+id → unique identifier
+
+class → apply CSS styles
+
+disabled → makes button unclickable
+
+name & value → used when sending form data
+
+autofocus → focuses on button automatically when page loads
+
+example:
+<button type="button" id="myBtn" class="blueBtn" disabled>
+   Disabled Button
+</button>
+
+
+Content Inside Button
+
+<button> can contain text, images, or icons (unlike <input type="button"> which only allows text).
+
+Example:
+
+<button>
+   <img src="icon.png" width="20"> Save
+</button>
+
+
+Styling with CSS
+
+<button class="btn">Click Me</button>
+
+<style>
+.btn {
+   background-color: blue;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.btn:hover {
+   background-color: darkblue;
+}
+</style>
+
+Difference: <button> vs <input type="button">
+
+| Feature      | `<button>`                   | `<input type="button">`         |
+| ------------ | ---------------------------- | ------------------------------- |
+| Content      | Can hold text, images, icons | Only text (via value attribute) |
+| Flexibility  | More customizable            | Limited                         |
+| Modern Usage | Preferred                    | Old-style, less used            |
+

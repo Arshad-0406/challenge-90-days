@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Academy Hub</title>
+</head>
+<body>
+    <header>
+        <h1>☕ Cafe Academy Hub 🍴</h1>
+        <p>welcome to our cafe + learning space!</p>
+    </header>
+    <hr>
+    <section id="menu">
+        <h2>🍕 Our Menu</h2>
+        <ul>
+            <li>Samosa-15 rupees</li>
+            <li>Pizza-100 rupees</li>
+            <li>Chocolate cake-200 rupees</li>
+        </ul>
+        <figure>
+            <img src="./assets/cake.jpg" alt="cake" width="200">
+            <figcaption>Our special chocolate cake</figcaption>
+        </figure>
+
+    </section>
+    <hr>
+
+    <section id="location">
+        <h2>📍 Find Us</h2>
+        <p>We’re located in the heart of the city!</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60908.11611191483!2d78.35557084863281!3d17.423433200000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb972ac27e4959%3A0xa3d14c260e61ddb9!2sRoastery%20Coffee%20House!5e0!3m2!1sen!2sin!4v1757523237587!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </iframe>
+    </section>
+    <hr>
+
+    <section id="survey">
+        <h2>📝 Customer Feedback Survey</h2>
+        <form>
+            <label>Name: <input type="text" name="name" required></label><br><br>
+             <label>Email: <input type="email" name="email"></label><br><br>
+             <label>Age: <input type="number" name="age" min="10" max="100"></label><br><br>
+
+             <p>How was your experience?</p>
+             <input type="radio" name="exp" value="good">Good
+             <input type="radio" name="exp" value="average">Average
+             <input type="radio" name="exp" value="bad">Bad<br><br>
+
+             <p>Favorite Item:</p>
+             <select name="Favorite">
+                <option value="samosa">Samosa</option>
+                <option value="pizza">Pizza</option>
+                <option value="cake">Cake</option>
+             </select><br><br>
+
+             <p>Would you recommend us?</p>
+             <input type="checkbox" name="recommend" value="yes">Yes<br><br>
+             <label>Date of Visit:<input type="date" name="date"></label><br><br>
+             <label>Upload Receipt:<input type="file"name="receipt"></label><br><br>
+             <button type="submit">Submit Feedback</button>
+             <button type="reset">Reset</button>
+
+        </form>
+    </section>
+    <hr>
+    <section id="report-card">
+        <h2>📊 Student Report Card</h2>
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>99</td>
+                <td>A+</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+                <td>88</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Social</td>
+                <td>76</td>
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td colspan="2"><strong>Total</strong></td>
+                <td><strong>263</strong></td>
+            </tr>
+
+        </table>
+
+    </section>
+    <hr>
+    <section id="music">
+        <h2>🎵 Cafe Vibes</h2>
+        <audio controls>
+            <source src="./assets/music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+    <hr>
+    <footer>
+        <p>Made with ❤️ by Cafe Academy Hub</p>
+    </footer>
+
+</body>
+</html>

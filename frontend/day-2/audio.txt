@@ -1,0 +1,69 @@
+The <audio> tag is used to embed sound content (like music, sound effects, podcasts) in a webpage.
+
+Introduced in HTML5.
+
+Supports common audio formats like MP3, Ogg, WAV.
+
+<audio controls>
+  <source src="sound.mp3" type="audio/mpeg">
+  <source src="sound.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+
+Attributes of <audio>
+
+controls → Adds play, pause, volume UI controls.
+
+<audio controls src="song.mp3"></audio>
+
+
+autoplay → Audio plays automatically when page loads. (Not recommended; most browsers block it unless muted.)
+
+<audio autoplay src="song.mp3"></audio>
+
+
+loop → Repeats audio when finished.
+
+<audio controls loop src="song.mp3"></audio>
+
+
+muted → Starts audio muted.
+
+<audio controls muted src="song.mp3"></audio>
+
+
+preload → Tells browser how much data to load in advance.
+
+none → Don’t preload.
+
+metadata → Only load metadata (duration, etc.).
+
+auto → Load whole file (default in some browsers).
+
+<audio controls preload="metadata" src="song.mp3"></audio>
+
+
+src → Directly specify audio file path.
+
+Example 1: Simple Audio Player
+<audio controls>
+  <source src="music.mp3" type="audio/mpeg">
+  <source src="music.ogg" type="audio/ogg">
+  Your browser does not support the audio element.
+</audio>
+
+
+Uses <source> for multiple file formats (browser compatibility).
+ Example 2: Autoplay and Loop
+<audio controls autoplay loop>
+  <source src="background.mp3" type="audio/mpeg">
+</audio>
+
+Example 3: Audio without Controls (background use)
+<audio autoplay loop hidden>
+  <source src="bg-sound.mp3" type="audio/mpeg">
+</audio>
+
+
+Often used for background sound effects (though usually discouraged for user experience).
+

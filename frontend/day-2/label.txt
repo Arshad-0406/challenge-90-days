@@ -1,0 +1,114 @@
+What is <label>?
+
+The <label> tag is used to define a caption (label) for form elements such as <input>, <textarea>, <select>.
+
+It improves usability and accessibility by making form controls easier to understand and click.
+
+Why use <label>?
+
+Accessibility – Screen readers can read the label with the form control.
+
+Usability – Clicking the label automatically focuses or activates the related input field.
+
+Example: Clicking on “Username” will focus the text box.
+
+Two Ways to Use <label>
+
+Using for Attribute (most common)
+
+The for attribute of <label> must match the id of the input field.
+
+Example:
+
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+
+
+Clicking "Username:" will focus on the input box.
+
+Wrapping the Input Inside <label>
+
+No need to use for or id.
+
+Example:
+
+<label>
+  <input type="checkbox" name="subscribe"> Subscribe to Newsletter
+</label>
+
+Clicking the text "Subscribe to Newsletter" also checks/unchecks the box.
+
+
+Why name and value are given in form elements
+ 1. name Attribute
+
+Identifies the form field.
+
+It is the key in the key=value pair that gets sent to the server when a form is submitted.
+
+Without name, the field’s value will not be submitted.
+
+Example:
+
+<form action="/submit" method="GET">
+   <input type="text" name="username" value="John">
+   <input type="password" name="password" value="1234">
+   <button type="submit">Submit</button>
+</form>
+
+
+ If user submits this form, the URL looks like:
+
+/submit?username=John&password=1234
+
+
+Here:
+
+username → key (from name)
+
+John → value (from input field content)
+
+2. value Attribute
+
+Defines the data/value that will be sent for that name.
+
+For text fields: default text.
+
+For radio/checkbox: the option value.
+
+For buttons: the button label (if no text inside).
+
+Example with checkboxes:
+
+<form>
+   <label><input type="checkbox" name="fruit" value="apple"> Apple</label>
+   <label><input type="checkbox" name="fruit" value="banana"> Banana</label>
+   <button type="submit">Submit</button>
+</form>
+
+
+ If you check Apple and submit:
+
+fruit=apple
+
+ If you check Apple and Banana:
+
+fruit=apple&fruit=banana
+
+3. name + value Together
+
+They form key-value pairs that are sent to the backend.
+
+name → tells the server which field this is.
+
+value → tells the server what the user selected/typed.
+
+Why Important?
+
+Server Communication – Without them, your backend won’t know what the user entered.
+
+Form Handling – Languages like PHP, Java, Python Flask/Django, Node.js read data using the name attribute.
+
+Example in PHP: $_POST['username'] → gets the value of the input with name="username".
+
+Default Values – value lets you pre-fill data (like saved username).

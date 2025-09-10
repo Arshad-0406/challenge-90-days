@@ -1,0 +1,60 @@
+1) In <input>, why do we take name and value?
+
+name → The key used when sending form data to the server.
+
+value → The data that is sent to the server.
+
+Example:
+
+<input type="text" name="username" value="John">
+
+
+What user sees: a text box with "John" inside.
+
+What server receives after form submission:
+
+username=John
+
+
+Is it compulsory that value and content appearing on webpage are same?
+
+No.
+
+For text inputs, the value attribute sets the default text.
+
+If the user types something else, that new text becomes the value sent to the server.
+
+So, the displayed text (user input) and the value attribute can be different after user types.
+
+2) In <option>, why do we give value?
+<select name="country">
+  <option value="in">India</option>
+  <option value="us">USA</option>
+</select>
+
+
+What user sees: "India" and "USA".
+
+What server receives: country=in or country=us.
+
+Reason: Sometimes you want to send short codes (in, us) instead of full text.
+If no value is given → the text inside <option> is sent.
+
+ 3) Is it compulsory to define name and value in <input>?
+
+name → Compulsory if you want to send data to server.
+Without name, that input field’s data will not be sent in form submission.
+
+value →  Not always compulsory.
+
+For text/number inputs → value is optional (user types it).
+
+For radio/checkbox → value is very important, otherwise server won’t know which option was chosen.
+
+Example:
+
+<input type="checkbox" name="subscribe" value="yes"> Subscribe
+
+
+If checked → server receives subscribe=yes.
+If no value given → browser sends subscribe=on (default).
