@@ -1,0 +1,123 @@
+CSS Font Properties
+1. font-family
+
+Specifies the typeface (font) for text.
+
+Can include multiple fonts as fallbacks.
+
+Always wrap multi-word fonts in quotes ("Times New Roman").
+
+p {
+  font-family: "Times New Roman", Georgia, serif;
+}
+
+
+Font Categories:
+
+Serif → fonts with small decorative strokes (e.g., Times New Roman).
+
+Sans-serif → clean fonts without strokes (e.g., Arial, Helvetica).
+
+Monospace → equal-width fonts (e.g., Courier New).
+
+Cursive → handwriting style (e.g., Comic Sans).
+
+Fantasy → decorative fonts.
+
+2. font-size
+
+Controls the size of text.
+
+h1 { font-size: 32px; }
+p { font-size: 1.2em; }
+small { font-size: 80%; }
+
+
+Units you can use:
+
+px (pixels) → fixed size (most common).
+
+em → relative to parent’s font-size.
+
+rem → relative to root (HTML) font-size.
+
+% → relative to parent element.
+
+vw/vh → relative to viewport width/height.
+
+3. font-weight
+
+Controls thickness/boldness of text.
+
+p {
+  font-weight: normal;   /* default */
+  font-weight: bold;     /* bold text */
+  font-weight: lighter;  /* lighter than parent */
+  font-weight: 100;      /* numeric scale (100–900) */
+}
+
+4. font-style
+
+Controls italic or normal style.
+
+p {
+  font-style: normal;
+  font-style: italic;
+  font-style: oblique; /* slanted version of font */
+}
+
+5. font-variant
+
+Controls small-caps formatting (uppercase letters in smaller size).
+
+p {
+  font-variant: small-caps;
+}
+
+6. line-height
+
+Controls space between lines of text.
+
+Useful for readability.
+
+p {
+  line-height: 1.5;   /* 1.5 times the font size */
+  line-height: 20px;  /* fixed value */
+}
+
+7. letter-spacing
+
+Controls space between characters.
+
+h1 {
+  letter-spacing: 3px;  /* more space */
+}
+
+8. word-spacing
+
+Controls space between words.
+
+p {
+  word-spacing: 10px;
+}
+
+9. font (shorthand)
+
+Shorthand to set multiple font properties at once.
+
+Order: font-style → font-variant → font-weight → font-size/line-height → font-family
+
+p {
+  font: italic small-caps bold 16px/1.5 "Arial", sans-serif;
+}
+
+Property	Purpose
+font-family	Typeface of text
+font-size	Text size
+font-weight	Boldness of text
+font-style	Italic, normal, oblique
+font-variant	Small-caps text
+line-height	Spacing between lines
+letter-spacing	Spacing between letters
+word-spacing	Spacing between words
+font (shorthand)	Sets multiple font styles in one go

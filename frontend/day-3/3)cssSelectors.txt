@@ -1,0 +1,46 @@
+CSS Selectors
+
+CSS selectors define the pattern of elements to which styles will be applied. They help you “select” specific HTML elements.
+
+1. Basic Selectors
+a) Universal Selector (*)
+
+Selects all elements on the page.
+
+* {
+  margin: 0;
+  padding: 0;
+}
+-------------------------------------------------
+b) Type Selector (Element Selector)
+
+Selects all instances of a specific HTML tag.
+
+p {
+  color: blue;
+}
+-----------------------------------------------------
+c) Class Selector (.classname)
+
+Selects elements with a specific class attribute.
+
+.intro {
+  font-size: 18px;
+}
+---------------------------------------------------
+d) ID Selector (#id)
+
+Selects a single element with a unique id attribute.
+
+#header {
+  background-color: lightgray;
+}
+-----------------------------------------------------
+e) Group Selector (,)
+
+Applies the same style to multiple selectors.
+
+h1, h2, h3 {
+  font-family: Arial, sans-serif;
+}
+-------------------------------------------------------

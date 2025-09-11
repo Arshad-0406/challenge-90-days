@@ -1,0 +1,93 @@
+Notes: How to Add CSS in HTML
+
+CSS can be applied in three main ways:
+
+1. Inline CSS
+
+CSS is written directly inside the HTML tag using the style attribute.
+
+Affects only that specific element.
+
+Syntax:
+<p style="color: blue; font-size: 18px;">This is inline CSS</p>
+
+
+Quick for testing
+Not reusable, clutters HTML
+---------------------------------------------------------
+
+2. Internal CSS
+
+CSS is written inside a <style> tag in the <head> section of the HTML file.
+
+Styles apply to the whole page.
+
+Syntax:
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    p {
+      color: green;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <p>This is internal CSS</p>
+</body>
+</html>
+
+
+Useful for single-page styling
+Cannot be reused across multiple pages
+-----------------------------------------------------------
+
+
+3. External CSS
+
+CSS rules are written in a separate .css file.
+
+Linked to HTML using <link> tag in the <head>.
+
+Syntax:
+
+style.css
+
+p {
+  color: red;
+  font-size: 22px;
+}
+
+
+index.html
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p>This is external CSS</p>
+</body>
+</html>
+
+
+Best practice (reusable, clean, maintainable)
+ Requires an extra file
+ -------------------------------------------------------------
+
+Extra: CSS Priority (Cascade Order)
+
+If multiple styles apply to the same element:
+
+Inline CSS → highest priority
+
+Internal CSS (in <style>)
+
+External CSS (linked file)
+
+Browser default styles → lowest priority
+
+(But specificity & !important can override this)
+----------------------------------------------------------

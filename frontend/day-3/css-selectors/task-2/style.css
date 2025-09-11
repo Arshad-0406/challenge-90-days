@@ -1,0 +1,52 @@
+*{
+    margin:0;
+
+    padding: 0;
+    
+}
+p{
+    font-size:16px;
+    color:violet;
+    line-height: 1.5;
+    
+}
+h1,h2,h3{
+    color:red;
+    font-weight: 900;
+}
+
+.logo{
+    font-family: cursive;
+    font-size:28px;
+    color:blue
+}
+
+#main-header{
+    background-color: palegreen;
+    padding: 15px;
+}
+a[target]{
+    color:red;
+
+}
+a[data-page="home"] {
+  color: darkorange;
+  
+}
+
+input[type="email"] {
+  border: 2px solid blue;
+  padding: 5px;
+}
+/*starts with "user"*/
+input[name^="user"] {
+  background-color: lightyellow;
+}
+/*ends with name*/
+input[name$="name"] {
+  border: 2px dashed purple;
+}
+/* Contains "age" */
+input[name*="age"] {
+  background-color: lightpink;
+}

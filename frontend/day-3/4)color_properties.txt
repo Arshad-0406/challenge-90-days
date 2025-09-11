@@ -1,0 +1,213 @@
+CSS Color Properties
+
+CSS provides multiple properties to control the color of text, backgrounds, borders, shadows, gradients, etc.
+
+1. color
+
+Defines the text color.
+
+p {
+  color: red;      /* named color */
+  color: #ff0000; /* hex value */
+  color: rgb(255, 0, 0);   /* RGB */
+  color: rgba(255, 0, 0, 0.8); /* RGB + alpha */
+  color: hsl(0, 100%, 50%);/* HSL */
+  color: hsla(0, 100%, 50%, 0.7); /* HSL + alpha */
+}
+
+2. background-color
+
+Sets the background color of an element.
+
+div {
+  background-color: lightblue;
+}
+
+3. border-color
+
+Sets the border color of an element.
+
+Can take 1–4 values (top, right, bottom, left).
+
+div {
+  border: 2px solid;
+  border-color: red green blue yellow;
+}
+
+4. outline-color
+
+Defines the color of the outline (extra line around an element).
+
+button {
+  outline: 2px solid;
+  outline-color: orange;
+}
+
+5. text-decoration-color
+
+Sets the color of underline, overline, or line-through.
+
+a {
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+
+6. text-emphasis-color
+
+Used with the text-emphasis property (mainly for East Asian typography).
+
+p {
+  text-emphasis: circle;
+  text-emphasis-color: green;
+}
+
+7. caret-color
+
+Sets the color of the text cursor (caret) in input fields.
+
+input {
+  caret-color: red;
+}
+
+8. column-rule-color
+
+Used in multi-column layouts.
+
+Defines the color of the line between columns.
+
+div {
+  column-count: 3;
+  column-rule: 3px solid blue;
+  column-rule-color: green;
+}
+
+9. text-shadow (color part)
+
+Adds a shadow with a color to text.
+
+h1 {
+  text-shadow: 2px 2px 5px gray;
+}
+
+10. box-shadow (color part)
+
+Adds a shadow to elements with a defined color.
+
+div {
+  box-shadow: 4px 4px 10px rgba(0,0,0,0.5);
+}
+
+-------------------------------------------------
+CSS Color Values
+
+CSS allows different ways to define colors:
+
+Named colors → red, blue, lightgreen (147 standard names).
+
+Hexadecimal → #RRGGBB or #RGB.
+Example: #ff0000 = red, #0f0 = green.
+
+RGB → rgb(255,0,0) = red.
+Values range 0–255.
+
+RGBA → rgba(255,0,0,0.5) = red with 50% transparency.
+
+HSL → hsl(0, 100%, 50%).
+
+hue: 0–360 (color wheel).
+
+saturation: % (color intensity).
+
+lightness: % (brightness).
+
+HSLA → hsla(120, 100%, 50%, 0.3) = semi-transparent green.
+
+currentColor → Uses the current text color for other properties.
+
+div {
+  color: blue;
+  border: 2px solid currentColor; /* border will also be blue */
+}
+
+------------------------------------------------
+RGBA (Red, Green, Blue, Alpha)
+
+It’s an extension of RGB (Red, Green, Blue).
+
+Each color is defined by red, green, and blue values (0–255).
+
+alpha is the transparency level.
+
+👉 Syntax:
+
+color: rgba(red, green, blue, alpha);
+
+
+red, green, blue → numbers between 0–255.
+
+alpha → number between 0 (fully transparent) and 1 (fully opaque).
+
+✅ Examples:
+
+p {
+  color: rgba(255, 0, 0, 1);   /* solid red */
+  color: rgba(255, 0, 0, 0.5); /* 50% transparent red */
+  color: rgba(0, 0, 255, 0.2); /* very light transparent blue */
+}
+
+🎨 2. HSL (Hue, Saturation, Lightness)
+
+HSL is more human-friendly than RGB.
+
+👉 Syntax:
+
+color: hsl(hue, saturation, lightness);
+
+
+Hue (0–360): The actual color on the color wheel.
+
+0 or 360 → red
+
+120 → green
+
+240 → blue
+
+Saturation (0%–100%): How intense/vivid the color is.
+
+100% → full color
+
+0% → gray (no color)
+
+Lightness (0%–100%): How light/dark the color is.
+
+0% → black
+
+50% → normal color
+
+100% → white
+
+✅ Examples:
+
+div {
+  color: hsl(0, 100%, 50%);    /* pure red */
+  color: hsl(120, 100%, 50%);  /* pure green */
+  color: hsl(240, 100%, 50%);  /* pure blue */
+  color: hsl(0, 0%, 50%);      /* gray */
+}
+
+🎨 3. HSLA (Hue, Saturation, Lightness, Alpha)
+
+HSLA is just HSL + transparency (alpha).
+
+👉 Syntax:
+
+color: hsla(hue, saturation, lightness, alpha);
+
+
+✅ Examples:
+
+h1 {
+  color: hsla(0, 100%, 50%, 1);   /* solid red */
+  color: hsla(0, 100%, 50%, 0.5); /* 50% transparent red */
+  color: hsla(200, 100%, 40%, 0.3); /* semi-transparent blue */
+}
