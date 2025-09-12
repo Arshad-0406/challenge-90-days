@@ -1,0 +1,89 @@
+What is CSS Inspection?
+
+CSS Inspection means using browser developer tools (like Chrome DevTools, Firefox Inspector, Edge DevTools) to:
+
+Check applied CSS styles.
+
+Debug styling issues.
+
+Test new CSS changes without editing the source code.
+
+Understand how elements inherit and override styles.
+
+How to Open CSS Inspection Tools
+
+Right-click → Inspect on any webpage element.
+
+Use Keyboard shortcuts:
+
+Chrome/Edge: Ctrl + Shift + I (Windows) / Cmd + Option + I (Mac)
+
+Firefox: Ctrl + Shift + C (Windows) / Cmd + Option + C (Mac)
+
+Key Features of CSS Inspection
+1. Elements Panel
+
+Shows the HTML structure of the page.
+
+Allows you to select elements visually.
+
+You can edit HTML directly here for testing.
+
+2. Styles Panel
+
+Displays all CSS rules applied to the selected element.
+
+Shows inline styles, internal CSS, and external stylesheets.
+
+Crossed-out rules = overridden by higher specificity.
+
+You can add, edit, or disable properties temporarily.
+
+3. Computed Tab
+
+Displays the final calculated style of the element after applying:
+
+Cascading rules
+
+Inheritance
+
+Browser defaults
+
+Useful for checking padding, margin, font-size, colors, etc.
+
+4. Box Model (Layout)
+
+Visual representation of:
+
+Content → Padding → Border → Margin
+
+Helps debug alignment and spacing issues.
+
+5. Hover / Active State Simulation
+
+Lets you test pseudo-classes like :hover, :focus, :active without coding.
+
+6. Responsive Design Mode
+
+Simulates different screen sizes & devices.
+
+Helps test media queries and responsive layouts.
+
+7. Network & Performance Panels (Optional for CSS inspection)
+
+Check if CSS files are loading correctly.
+
+Detect unused or large CSS files.
+------------------------------------------------------------
+
+Why CSS Inspection is Useful?
+
+Debugging why a style is not applying.
+
+Checking which CSS rule overrides another.
+
+Testing quick design changes without editing source files.
+
+Understanding websites built by others (useful for learning).
+
+Ensuring cross-browser & responsive compatibility.

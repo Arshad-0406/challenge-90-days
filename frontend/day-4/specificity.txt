@@ -1,0 +1,107 @@
+CSS Cascade, Specificity & Inheritance
+1. Cascade
+
+The cascade is how the browser decides which CSS rules to apply when there are multiple rules targeting the same element.
+The decision is made based on three main factors:
+
+Importance
+
+Rules marked with !important override normal rules.
+
+Example:
+
+p { color: blue !important; }
+p { color: red; }  /* Will be ignored */
+
+
+Specificity
+
+More specific selectors override less specific ones.
+
+(Explained in detail below ⬇)
+
+Source Order
+
+If specificity and importance are the same, the last declared rule wins.
+
+Example:
+
+h1 { color: green; }
+h1 { color: orange; }  /* This wins */
+
+2. Specificity
+
+Specificity is a ranking system that decides which CSS rule applies when multiple selectors target the same element.
+
+Inline styles → Highest priority.
+
+ID selectors (#id) → Strong.
+
+Class selectors (.class), attribute selectors, pseudo-classes (:hover) → Medium.
+
+Type selectors (h1, p, div) and pseudo-elements (::before) → Low.
+
+Universal selector (*), combinators (+, >, ~), and inheritance → Lowest.
+
+Specificity Weight System (think of it as points):
+
+Inline style → 1000
+
+ID → 100
+
+Class, attribute, pseudo-class → 10
+
+Element, pseudo-element → 1
+
+ Example:
+
+#main p { color: red; }   /* Specificity = 100 + 1 = 101 */
+.content p { color: blue; }  /* Specificity = 10 + 1 = 11 */
+p { color: green; }  /* Specificity = 1 */
+
+
+ Final color → red (highest specificity).
+
+3. Inheritance
+
+Some CSS properties are inherited by default from the parent element.
+
+Example (inherited by default): color, font-family, line-height.
+
+Example (not inherited): margin, padding, border, background.
+
+Controlling Inheritance
+
+inherit → Forces property to take parent’s value.
+
+initial → Resets property to browser’s default.
+
+unset → Acts as inherit for inheritable properties, otherwise initial.
+
+Example:
+
+p {
+  color: inherit;   /* Takes color from parent */
+  margin: initial;  /* Resets margin to default */
+}
+
+Key Takeaways
+
+Cascade = importance (!important) → specificity → source order.
+
+Specificity = ranking system (inline > ID > class > element).
+
+Inheritance = some properties are passed down, others aren’t.
+------------------------------------------------
+
+Final Cascade Order (from strongest to weakest)
+
+Importance (!important)
+
+Specificity (inline > ID > class > element)
+
+Position (last rule wins)
+
+Type/Origin (author > user > browser)
+
+Inheritance (only for inheritable properties)

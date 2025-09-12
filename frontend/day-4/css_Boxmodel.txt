@@ -1,0 +1,108 @@
+CSS Box Model – Overview
+
+The CSS Box Model describes how every HTML element is structured and how space is calculated around it.
+Each element is treated as a rectangular box made up of:
+
+Content → Text, image, or other data inside the element.
+
+Padding → Space between content and border.
+
+Border → Surrounds the padding (and content).
+
+Margin → Space outside the border, separating the element from others.
+
+Structure of Box Model:
+
++-----------------------+
+|       Margin          |
+|  +-----------------+  |
+|  |     Border      |  |
+|  |  +-----------+  |  |
+|  |  |  Padding  |  |  |
+|  |  | +-------+ |  |  |
+|  |  | |Content| |  |  |
+|  |  | +-------+ |  |  |
+|  |  +-----------+  |  |
+|  +-----------------+  |
++-----------------------+
+
+Components Explained
+1. Content
+
+The innermost area where text, images, or child elements are displayed.
+
+Controlled by properties like:
+
+width
+
+height
+
+2. Padding
+
+Clears space inside the element, between content and border.
+
+Transparent area (background color of element still visible).
+
+Properties:
+
+padding (all sides)
+
+padding-top, padding-right, padding-bottom, padding-left
+
+3. Border
+
+Wraps the content + padding.
+
+Properties:
+
+border-width
+
+border-style (solid, dashed, dotted, none, etc.)
+
+border-color
+
+4. Margin
+
+Clears space outside the border, separating element from others.
+
+Always transparent.
+
+Properties:
+
+margin (all sides)
+
+margin-top, margin-right, margin-bottom, margin-left
+
+Margins between vertical elements may collapse (margin collapsing).
+
+📐 Total Element Size Calculation
+
+By default (box-sizing: content-box):
+
+Total Width  = content-width + padding-left + padding-right + border-left + border-right + margin-left + margin-right
+Total Height = content-height + padding-top + padding-bottom + border-top + border-bottom + margin-top + margin-bottom
+
+box-sizing Property
+
+content-box (default) → width & height apply only to content.
+
+border-box → width & height include content + padding + border (easier for layouts).
+
+Example:
+div {
+  width: 200px;
+  padding: 20px;
+  border: 10px solid black;
+  box-sizing: border-box;
+}
+Final width will stay 200px (not grow bigger).
+
+Why Box Model is Important?
+
+Helps in controlling spacing and layout.
+
+Prevents unexpected overflow.
+
+Essential for responsive design.
+
+Makes debugging with CSS inspection tools easier.
